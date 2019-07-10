@@ -1,0 +1,102 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>FCC - Build a Product Landing Page</title>
+  <meta name="description">
+  <meta name="author">
+
+</head>
+
+<body>
+
+<!-- User Story #1: My product landing page should have a header element with a corresponding id="header"-->
+<header id="header">
+<!-- User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here -->
+<img src="http://cdn.shopify.com/s/files/1/1636/0487/products/300115_grande.jpg?v=1500049799" id="header-img" alt="company-logo">
+<!-- User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar" -->
+  
+<!-- User Story #4: I can see at least three clickable elements inside the nav element, each with the class nav-link -->
+  <nav id="nav-bar"> <!-- User Story #13: The navbar should always be at the top of the viewport -->
+    <ul>
+      <li><a class="nav-link" href="#features">Features</a></li>
+      <li><a class="nav-link" href="#pricing">Pricing</a></li>
+      <li><a class="nav-link" href="#types">Types</a></li>
+    </ul>
+  </nav><!-- User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page -->
+</header>
+<!-- User Story #14: My product landing page should have at least one media query -->
+<div id="learn-more">
+  <h2>I want to learn more!</h2>
+  <p>Please type in your name and email address below to receive a product brochure</p>
+  <form id="form" action="https://www.freecodecamp.com/email-submit"> 
+    <input id="name" placeholder="Name" type="text" name="name">
+<!-- User Story #8: Within the form, there is an input field with id="email" where I can enter an email address -->
+    <input id="email" placeholder="email@company.com" type="email" name="email" required>
+<!-- User Story #9: The #email input field should have placeholder text to let the user know what the field is for -->
+    
+<!-- User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address -->
+    <input type="submit" id="submit"></input>
+<!-- User Story #11: Within the form, there is a submit input with a corresponding id="submit" -->
+  </form>
+  </div>
+User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit) that confirms the email address was entered and that it posted successfully.
+  
+<!-- User Story #6: I can watch an embedded product video with id="video" -->
+  <section id="types"> 
+  <h2>Types</h2>
+  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p> 
+  <video id="video" width="500" height="300" controls>
+  <source src="https://youtu.be/yZo9tN0kLIY" type="video/mp4">
+  </video>
+  </section>
+<!-- User Story #7: My landing page has a form element with a corresponding id="form" -->
+  <section id="features">
+  <h2>Features </h2>
+  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem</p>
+  <div id="features-container">
+  <div id="box-1"><img src="https://images.finishline.com/is/image/FinishLine/921826_101?$Main_gray$">
+    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</div>
+
+  <div id="box-2"><img src="https://ugc.nikeid.com/is/image/nike/ugc/782735277.tif?$DESKTOP_ID_PREBUILD$">
+    Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</div>
+
+  <div id="box-3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9_yZCULhaPl1kprQUuN-rxLU90sjVATX3tZNfqHZ7MU7WPaR_">
+    Xed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat</div>
+   </div>
+  </section>
+  <section id="pricing"> 
+  <h2>Pricing</h2>
+  <h3>Package 1</h3>
+  <h3>Package 2</h3>
+  <h3>Package 3</h3>
+  </section>
+<!-- User Story #15: My product landing page should utilize CSS flexbox at least once -->
+  <footer> 
+    <ul>
+      <li>
+      <a href="#" class="footer-link">Privacy</a>
+    </li>
+    <li><a href="#" class="footer-link">Terms</a>
+     </li>
+      <li><a href="#" class="footer-link">Contact</a>
+    </li>
+    </ul>
+    <p>Copyright 2019</p>
+  </footer>
+</body>
+</html>
